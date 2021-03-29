@@ -1,4 +1,41 @@
 body {
+    background-repeat: no-repeat;
+    background-color: greenyellow;
     background-image: url(https://dss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/skin/825.jpg?2);
     background-size: 100%;
+}
+
+.box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 23%;
+    background-color: gray;
+    border-radius: 0px;
+    height: 60px;
+}
+
+.first-font {
+    margin-left: 20px
+}
+
+.font-set {
+    font-family: Arial, sans-serif;
+    text-indent: 6px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    text-decoration: none
+}
+
+.littlebox {
+    margin-right: 31px;
+    margin-top: 19px;
+    display: inline-block;
+    position: relative
+}
+
+.more {
+    display: none
 }
