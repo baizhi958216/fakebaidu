@@ -56,3 +56,18 @@ body {
     width: 45%;
     height: 40px;
 }
+
+.searchbar-go {
+    cursor: pointer;
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    width: 16%;
+    height: 40px;
+    right: 0px;
+}
