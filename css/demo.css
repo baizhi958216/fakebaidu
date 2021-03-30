@@ -73,3 +73,7 @@ body {
     height: 40px;
     right: 0px;
 }
+
+.button:hover {
+    background: #4662d9;
+}
