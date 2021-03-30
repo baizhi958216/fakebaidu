@@ -29,6 +29,10 @@ body {
     text-decoration: none
 }
 
+.font-set:hover {
+    color: blue;
+}
+
 .littlebox {
     margin-right: 31px;
     margin-top: 19px;
