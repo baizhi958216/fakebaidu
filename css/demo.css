@@ -13,7 +13,7 @@ body {
     opacity: 23%;
     background-color: gray;
     border-radius: 0px;
-    height: 60px;
+    height: 65px;
 }
 
 .first-font {
@@ -26,11 +26,12 @@ body {
     font-size: 13px;
     text-align: center;
     color: white;
+    opacity: 85%;
     text-decoration: none
 }
 
 .font-set:hover {
-    color: blue;
+    opacity: 100%
 }
 
 .littlebox {
