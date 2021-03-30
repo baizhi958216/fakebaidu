@@ -82,3 +82,42 @@ body {
 .button:hover {
     background: #4662d9;
 }
+
+.font-set1 {
+    font-size: 13px;
+    opacity: 85%;
+    display: inline;
+    margin-right: 18px;
+}
+
+.underboxtext {
+    opacity: 60%;
+    color: gray;
+    text-decoration: none
+}
+
+.underboxtext:hover {
+    opacity: 100%;
+    color: black;
+}
+
+.underbox {
+    width: 100%;
+    position: fixed;
+    z-index: 302;
+    bottom: 0;
+    left: 0;
+    height: 39px;
+    padding-top: 1px;
+    overflow: hidden;
+    zoom: 1;
+    margin: 0;
+    line-height: 39px;
+    background: #fff;
+}
+
+.last {
+    opacity: 60%;
+    color: gray;
+    cursor: default
+}
