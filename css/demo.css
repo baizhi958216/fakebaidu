@@ -91,6 +91,16 @@ body {
     margin-right: 18px;
 }
 
+#centerbox {
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    width: 45%;
+    background-color: white;
+    border-radius: 20px;
+    height: 480px;
+}
+
 .underboxtext {
     opacity: 60%;
     color: gray;
