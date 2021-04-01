@@ -47,7 +47,8 @@ body {
 
 .logo {
     margin-top: 20px;
-    text-align: center
+    text-align: center;
+    user-select: none
 }
 
 .searchbar {
