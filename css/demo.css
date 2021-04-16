@@ -45,23 +45,32 @@ body {
     display: none
 }
 
-.logo {
+
+/* .logo {
     margin-top: 20px;
     text-align: center;
     user-select: none
+} */
+
+.search {
+    position: absolute;
+    top: 30%;
+    left: 30%;
 }
 
-.searchbar {
-    position: absolute;
-    left: 28%;
-    background-color: white;
+input {
+    background: white;
+    float: left;
     border-style: solid;
-    border-radius: 15px;
     border-color: rgb(0, 119, 255);
     border-width: 2px;
-    width: 45%;
-    height: 42px;
-    user-select: none
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    outline: none;
+    width: 380px;
+    height: 38px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .button {
@@ -80,6 +89,7 @@ body {
     font-weight: 400;
     border: none;
     outline: 0;
+    user-select: none
 }
 
 .button:hover {
