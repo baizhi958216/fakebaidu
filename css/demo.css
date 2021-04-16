@@ -16,6 +16,10 @@ body {
     height: 65px;
 }
 
+#top {
+    white-space: nowrap;
+}
+
 .first-font {
     margin-left: 20px
 }
