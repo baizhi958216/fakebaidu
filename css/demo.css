@@ -71,13 +71,13 @@ input {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     outline: none;
-    width: 380px;
+    width: 360px;
     height: 38px;
     font-size: 20px;
     text-align: center;
 }
 
-.button {
+button {
     cursor: pointer;
     width: 108px;
     height: 44px;
@@ -96,7 +96,7 @@ input {
     user-select: none
 }
 
-.button:hover {
+button:hover {
     background: #4662d9;
 }
 
