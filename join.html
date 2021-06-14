@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册账号</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/join.css">
+</head>
+
+<body>
+    <canvas id="cas"></canvas>
+    <div class="container">
+        <div class="myBox" data-tilt data-tilt-max="5" data-tilt-speed="800">
+            <div class="joinHeader">
+                <h2>注册</h2>
+            </div>
+            <form action="#" class="formgroup">
+                <dl class="formgroup-1">
+                    <dt>
+                            <label for="user_login">用户名:</label>
+                        </dt>
+                    <dd>
+                        <input type="text" id="user_login">
+                    </dd>
+                </dl>
+                <!-- 用户名/用户账号 -->
+                <dl class="formgroup-2">
+                    <dt>
+                            <label for="user_email">邮箱:</label>
+                        </dt>
+                    <dd>
+                        <input type="text" id="user_email">
+                    </dd>
+                </dl>
+                <!-- 用户邮箱 -->
+                <dl class="formgroup-3">
+                    <dt>
+                            <label for="user_passwd">密码:</label>
+                        </dt>
+                    <dd>
+                        <input type="password" id="user_passwd">
+                    </dd>
+                </dl>
+                <!-- 密码 -->
+
+                <input class="enter" type="button" value="立即注册" onclick='location.href=("index.htm")'>
+            </form>
+        </div>
+    </div>
+    <script src="./js/VanillaTilt.js"></script>
+    <script src="./js/cas.js"></script>
+</body>
+
+</html>

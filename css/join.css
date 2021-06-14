@@ -8,17 +8,14 @@
 
 .myBox {
     background-color: rgba(255, 255, 255, 0.404);
-    /* background-image: url(../images/mycat.png); */
-    /* background-repeat: no-repeat; */
-    height: 600px;
     width: 500px;
-    /* background-position: 100% 70%; */
+    height: 600px;
     border-radius: 50px;
     box-shadow: 13px 13px 30px rgba(163, 163, 163, 0.747);
     backdrop-filter: blur(6px);
 }
 
-.loginHeader {
+.joinHeader {
     position: relative;
     height: 180px;
     display: flex;
@@ -26,41 +23,41 @@
     justify-content: center;
 }
 
-.loginHeader h2 {
+.joinHeader h2 {
     font-family: 'Noto Sans SC', sans-serif;
     font-size: 50px;
     user-select: none;
+    color: rgba(46, 153, 253, 0.726);
 }
 
-.inputBox {
-    display: grid;
-    justify-content: center;
+.formgroup {
+    text-align: center;
 }
 
-.inputBox .inpt {
+.formgroup-2,
+.formgroup-3 {
+    margin-top: 20px;
+}
+
+label {
+    color: rgba(46, 160, 253, 0.801);
+}
+
+.formgroup-1 dd input,
+.formgroup-2 dd input,
+.formgroup-3 dd input {
     width: 300px;
     height: 50px;
     text-align: center;
     outline: none;
-    margin-bottom: 25px;
     border: 1px solid rgba(128, 215, 255, 0.747);
     border-radius: 20px;
     font-size: large;
     color: rgba(46, 153, 253, 0.589);
 }
 
-::-webkit-input-placeholder {
-    color: rgba(153, 153, 153, 0.274);
-}
-
-#showpswd {
-    position: relative;
-    left: -40px;
-    color: rgb(128, 215, 255);
-}
-
-.inputBox .enter {
-    margin-bottom: 25px;
+.enter {
+    margin-top: 50px;
     background-color: rgb(43, 188, 255);
     outline: none;
     border: none;
@@ -68,50 +65,16 @@
     width: 150px;
     height: 60px;
     border-radius: 60px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     transition: all .2s linear;
     font-weight: bold;
     font-size: large;
     color: rgb(255, 255, 255);
 }
 
-.inputBox .enter:hover {
+.enter:hover {
     background-color: rgb(128, 215, 255);
 }
 
-.inputBox .enter:active {
+.enter:active {
     background-color: rgb(43, 188, 255);
-}
-
-.signNow {
-    position: relative;
-    top: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.signNow a {
-    color: rgb(157, 169, 238);
-}
-
-.otherWay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-}
-
-.otherWay a {
-    height: 2em;
-    width: 2em;
-    margin: 15px;
-    border-radius: 50%;
-    transition: all .3s linear;
-}
-
-.otherWay a:hover {
-    box-shadow: 6px 6px 12px rgba(148, 148, 148, 0.747);
 }
