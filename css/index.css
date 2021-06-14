@@ -7,11 +7,12 @@
 }
 
 .myBox {
-    background-color: rgba(255, 255, 255, 0.747);
+    background-color: rgba(255, 255, 255, 0.404);
     background-image: url(../images/mycat.png);
     background-repeat: no-repeat;
     height: 600px;
     width: 500px;
+    background-position: 100% 70%;
     border-radius: 50px;
     box-shadow: 13px 13px 30px rgba(163, 163, 163, 0.747);
 }
@@ -44,6 +45,17 @@
     border: 1px solid rgba(128, 215, 255, 0.747);
     border-radius: 20px;
     font-size: large;
+    color: rgba(46, 153, 253, 0.589);
+}
+
+::-webkit-input-placeholder {
+    color: rgba(153, 153, 153, 0.274);
+}
+
+#showpswd {
+    position: relative;
+    left: -40px;
+    color: rgb(128, 215, 255);
 }
 
 .inputBox .enter {
@@ -92,5 +104,13 @@
 }
 
 .otherWay a {
+    height: 2em;
+    width: 2em;
     margin: 15px;
+    border-radius: 50%;
+    transition: all .3s linear;
+}
+
+.otherWay a:hover {
+    box-shadow: 6px 6px 12px rgba(148, 148, 148, 0.747);
 }
