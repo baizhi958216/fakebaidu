@@ -30,7 +30,7 @@ window.onmouseout = function(e) {
 // 添加粒子  
 // x，y为粒子坐标，xa, ya为粒子xy轴加速度，max为连线的最大距离  
 var dots = [];
-for (var i = 0; i < 180; i++) {
+for (var i = 0; i < 100; i++) {
     var x = Math.random() * canvas.width;
     var y = Math.random() * canvas.height;
     var xa = Math.random() * 3 - 1;
@@ -84,7 +84,7 @@ function animate() {
                 // 画线  
                 ctx.beginPath();
                 ctx.lineWidth = ratio / 2;
-                ctx.strokeStyle = 'rgba(50,188,255,' + (ratio + 0.2) + ')';
+                ctx.strokeStyle = 'rgba(139, 215, 245,' + (ratio + 0.2) + ')';
                 ctx.moveTo(dot.x, dot.y);
                 ctx.lineTo(d2.x, d2.y);
                 ctx.stroke();

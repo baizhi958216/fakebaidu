@@ -15,6 +15,7 @@
     background-position: 100% 70%;
     border-radius: 50px;
     box-shadow: 13px 13px 30px rgba(163, 163, 163, 0.747);
+    backdrop-filter: blur(6px);
 }
 
 .loginHeader {
