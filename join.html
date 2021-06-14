@@ -15,43 +15,61 @@
     <div class="container">
         <div class="myBox" data-tilt data-tilt-max="5" data-tilt-speed="800">
             <div class="joinHeader">
-                <h2>注册</h2>
+                <h2 id="done">注册</h2>
             </div>
-            <form action="#" class="formgroup">
+            <div id="scs">
+                <svg style="width: 15em;height: 15em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3346"><path d="M512 512m-448 0a448 448 0 1 0 896 0 448 448 0 1 0-896 0Z" fill="#07C160" p-id="3347"></path><path d="M466.7 679.8c-8.5 0-16.6-3.4-22.6-9.4l-181-181.1c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l158.4 158.5 249-249c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L489.3 670.4c-6 6-14.1 9.4-22.6 9.4z" fill="#FFFFFF" p-id="3348"></path></svg>
+            </div>
+            <input id="go" type="button" value="马上登录" onclick="location='index.htm'">
+
+
+            <form action="#" class="formgroup" autocomplete="off" id="formgroup">
                 <dl class="formgroup-1">
                     <dt>
-                            <label for="user_login">用户名:</label>
-                        </dt>
+                        <label for="user_login">用户名:</label>
+                    </dt>
                     <dd>
-                        <input type="text" id="user_login">
+                        <input type="text" id="user_login" placeholder="输入用户名/账号...">
                     </dd>
                 </dl>
                 <!-- 用户名/用户账号 -->
                 <dl class="formgroup-2">
                     <dt>
-                            <label for="user_email">邮箱:</label>
-                        </dt>
+                        <label for="user_email">邮箱:</label>
+                    </dt>
                     <dd>
-                        <input type="text" id="user_email">
+                        <input type="text" id="user_email" placeholder="输入注册邮箱...">
                     </dd>
                 </dl>
                 <!-- 用户邮箱 -->
                 <dl class="formgroup-3">
                     <dt>
-                            <label for="user_passwd">密码:</label>
-                        </dt>
+                        <label for="user_passwd">密码:</label>
+                    </dt>
                     <dd>
-                        <input type="password" id="user_passwd">
+                        <input type="password" id="user_passwd" placeholder="输入密码...">
                     </dd>
                 </dl>
                 <!-- 密码 -->
 
-                <input class="enter" type="button" value="立即注册" onclick='location.href=("index.htm")'>
+                <input class="enter" type="button" value="立即注册" onclick="joinOk()">
             </form>
         </div>
     </div>
     <script src="./js/VanillaTilt.js"></script>
     <script src="./js/cas.js"></script>
+    <script>
+        function joinOk() {
+            var arr = new Array("scs", "go");
+            for (var i = 0; i < arr.length; i++) {
+                document.getElementById(arr[i]).style.display = "block";
+            }
+            document.getElementById('formgroup').style.display = "none";
+            document.getElementById('scs').style.textAlign = "center";
+            var h2 = document.getElementById('done');
+            console.log(h2);
+        }
+    </script>
 </body>
 
 </html>
