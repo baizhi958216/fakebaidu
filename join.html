@@ -18,7 +18,7 @@
                 <h2 id="done">注册</h2>
             </div>
             <div id="scs">
-                <svg style="width: 15em;height: 15em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3346"><path d="M512 512m-448 0a448 448 0 1 0 896 0 448 448 0 1 0-896 0Z" fill="#07C160" p-id="3347"></path><path d="M466.7 679.8c-8.5 0-16.6-3.4-22.6-9.4l-181-181.1c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l158.4 158.5 249-249c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L489.3 670.4c-6 6-14.1 9.4-22.6 9.4z" fill="#FFFFFF" p-id="3348"></path></svg>
+                <svg style="width: 15em;height: 15em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3346"><path d="M512 512m-448 0a448 448 0 1 0 896 0 448 448 0 1 0-896 0Z" fill="rgba(128, 215, 255, 0.747)" p-id="3347"></path><path d="M466.7 679.8c-8.5 0-16.6-3.4-22.6-9.4l-181-181.1c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l158.4 158.5 249-249c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L489.3 670.4c-6 6-14.1 9.4-22.6 9.4z" fill="#FFFFFF" p-id="3348"></path></svg>
             </div>
             <input id="go" type="button" value="马上登录" onclick="location='index.htm'">
 
@@ -26,7 +26,7 @@
             <form action="#" class="formgroup" autocomplete="off" id="formgroup">
                 <dl class="formgroup-1">
                     <dt>
-                        <label for="user_login">用户名:</label>
+                        <label for="user_login" id="myName">用户名:</label>
                     </dt>
                     <dd>
                         <input type="text" id="user_login" placeholder="输入用户名/账号...">
@@ -67,7 +67,7 @@
             document.getElementById('formgroup').style.display = "none";
             document.getElementById('scs').style.textAlign = "center";
             var h2 = document.getElementById('done');
-            console.log(h2);
+            h2.innerHTML += "成功";
         }
     </script>
 </body>

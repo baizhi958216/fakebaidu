@@ -53,6 +53,11 @@
     transform: translateX(-50%);
 }
 
+#go:hover {
+    background-color: rgba(128, 215, 255, 0.747);
+    transition: all .2s linear;
+}
+
 .formgroup {
     text-align: center;
     /* display: none; */
