@@ -26,7 +26,7 @@
             <form action="#" class="formgroup" autocomplete="off" id="formgroup">
                 <dl class="formgroup-1">
                     <dt>
-                        <label for="user_login" id="myName">用户名:</label>
+                        <label for="user_login">用户名:</label>
                     </dt>
                     <dd>
                         <input type="text" id="user_login" placeholder="输入用户名/账号...">
@@ -60,6 +60,8 @@
     <script src="./js/cas.js"></script>
     <script>
         function joinOk() {
+            var userId = document.getElementById('user_login');
+            alert("注册成功！您的账号为:" + userId.value);
             var arr = new Array("scs", "go");
             for (var i = 0; i < arr.length; i++) {
                 document.getElementById(arr[i]).style.display = "block";
