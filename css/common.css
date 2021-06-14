@@ -3,13 +3,6 @@
     margin: 0;
 }
 
-.bgimage {
-    background-image: url(../images/Arch.png);
-    background-repeat: no-repeat;
-    position: fixed;
-    /* 固定页面背景 */
-    height: 100%;
-    width: 100%;
-    z-index: -5;
-    /* 设置为-5层 */
+body {
+    background-color: rgba(214, 228, 255, 0.534);
 }
