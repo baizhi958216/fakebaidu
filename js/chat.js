@@ -136,3 +136,17 @@ function joinOk() {
         h2.innerHTML += "成功";
     }
 }
+
+function enterMain() {
+    var userId;
+    var paswId;
+    userId = document.getElementById('account');
+    paswId = document.getElementById('pass');
+    if (userId.value === "") {
+        alert("用户名为空，请重新输入");
+        return 0;
+    } else if (paswId.value === "") {
+        alert("密码为空，请重新输入");
+        return 0;
+    } else { location = 'chat.html' }
+}
