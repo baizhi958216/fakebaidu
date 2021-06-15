@@ -8,18 +8,22 @@
     <title>注册账号</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/join.css">
+    <script src="./js/jquery.min.js"></script>
 </head>
 
 <body>
     <canvas id="cas"></canvas>
     <div class="container">
         <div class="myBox" data-tilt data-tilt-max="5" data-tilt-speed="800">
+            <div class="bgi"></div>
             <div class="joinHeader">
+                <div id="back" onclick="location='index.htm'"><svg class="icon" style="color:rgba(15, 155, 255, 0.747); width: 3em;height: 3em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2071"><path d="M512 128c211.74 0 384 172.26 384 384S723.74 896 512 896 128 723.74 128 512s172.27-384 384-384m0-64C264.58 64 64 264.58 64 512s200.58 448 448 448 448-200.58 448-448S759.42 64 512 64zM704 480H397.26L501 376.23A32 32 0 0 0 455.77 331L297.38 489.37s-0.05 0.09-0.09 0.13A32.26 32.26 0 0 0 288 512a32.38 32.38 0 0 0 9.37 22.58L455.77 693A32 32 0 1 0 501 647.76L397.26 544H704a32 32 0 0 0 0-64z" p-id="2072"></path></svg></div>
                 <h2 id="done">注册</h2>
             </div>
             <div id="scs">
                 <svg style="width: 15em;height: 15em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3346"><path d="M512 512m-448 0a448 448 0 1 0 896 0 448 448 0 1 0-896 0Z" fill="rgba(128, 215, 255, 0.747)" p-id="3347"></path><path d="M466.7 679.8c-8.5 0-16.6-3.4-22.6-9.4l-181-181.1c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l158.4 158.5 249-249c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L489.3 670.4c-6 6-14.1 9.4-22.6 9.4z" fill="#FFFFFF" p-id="3348"></path></svg>
             </div>
+            <div id="check"></div>
             <input id="go" type="button" value="马上登录" onclick="location='index.htm'">
 
 
@@ -44,34 +48,21 @@
                 <!-- 用户邮箱 -->
                 <dl class="formgroup-3">
                     <dt>
-                        <label for="user_passwd">密码:</label>
+                        <label for="pass">密码:</label>
                     </dt>
                     <dd>
-                        <input type="password" id="user_passwd" placeholder="输入密码...">
+                        <input type="password" id="pass" placeholder="输入密码...">
+                        <svg class="icon" id="showpswd" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1992"><path d="M512 352c-89.6 0-160 70.4-160 160s70.4 160 160 160 160-70.4 160-160S601.6 352 512 352zM512 608c-54.4 0-96-41.6-96-96s41.6-96 96-96 96 41.6 96 96S566.4 608 512 608zM956.8 499.2C886.4 320 697.6 192 512 192 297.6 192 153.6 358.4 67.2 496c-6.4 9.6-6.4 22.4 0 32C153.6 665.6 297.6 832 512 832c185.6 0 374.4-128 444.8-307.2C960 515.2 960 508.8 956.8 499.2zM512 768c-176 0-300.8-134.4-377.6-256 76.8-121.6 201.6-256 377.6-256 153.6 0 316.8 108.8 380.8 256C828.8 659.2 665.6 768 512 768z" p-id="1993"></path></svg>
                     </dd>
                 </dl>
                 <!-- 密码 -->
 
-                <input class="enter" type="button" value="立即注册" onclick="joinOk()">
+                <input id="enter" class="enter" type="button" value="立即注册" onclick="joinOk()">
             </form>
         </div>
     </div>
     <script src="./js/VanillaTilt.js"></script>
-    <script src="./js/cas.js"></script>
-    <script>
-        function joinOk() {
-            var userId = document.getElementById('user_login');
-            alert("注册成功！您的账号为:" + userId.value);
-            var arr = new Array("scs", "go");
-            for (var i = 0; i < arr.length; i++) {
-                document.getElementById(arr[i]).style.display = "block";
-            }
-            document.getElementById('formgroup').style.display = "none";
-            document.getElementById('scs').style.textAlign = "center";
-            var h2 = document.getElementById('done');
-            h2.innerHTML += "成功";
-        }
-    </script>
+    <script src="./js/chat.js"></script>
 </body>
 
 </html>
