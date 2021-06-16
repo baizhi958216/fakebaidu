@@ -6,3 +6,10 @@
 body {
     background-color: rgba(214, 228, 255, 0.534);
 }
+
+canvas {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
