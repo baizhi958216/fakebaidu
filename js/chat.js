@@ -150,3 +150,7 @@ function enterMain() {
         return 0;
     } else { location = 'chat.html' }
 }
+
+function byePlaceholder() {
+    ph = document.getElementById('launch');
+}

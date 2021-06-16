@@ -13,6 +13,7 @@
 
 <body>
     <canvas id="cas"></canvas>
+    <!-- <iframe src="https://ac.yunyoujun.cn" style="z-index: 999; border: none;height: 100%;position: absolute;right: 0; "></iframe> -->
     <div class="container">
         <div class="box">
             <div class="left">
@@ -26,7 +27,7 @@
                         <div class="running itemstyle" onclick="location='chat.html'">弹幕聊天</div>
                     </div>
                     <div class="items">
-                        <div class="bgmplayer itemstyle" onclick="location='bgm.html'">背景音乐</div>
+                        <div class="bgmplayer itemstyle" onclick="location='bgm.html'">听歌</div>
                     </div>
                     <div class="items">
                         <div class="about itemstyle" onclick="location='about.html'">关于</div>
@@ -37,6 +38,14 @@
                 </div>
             </div>
             <div class="right">
+                <div class="rRun">
+                    <div class="runTop">
+                    </div>
+                    <div class="runBottom">
+                        <input id="launch" type="text" value="老师给点分。。。。。。" maxlength="30" placeholder="发个友善的弹幕见证当下" onclick="byePlaceholder()">
+                        <button>发送</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
