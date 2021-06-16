@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <canvas id="cas"></canvas>
     <div class="container">
         <div class="box">
             <div class="left">
@@ -22,13 +23,13 @@
                         </div>
                     </div>
                     <div class="items">
-                        <div class="running itemstyle">弹幕聊天</div>
+                        <div class="running itemstyle" onclick="location='chat.html'">弹幕聊天</div>
                     </div>
                     <div class="items">
-                        <div class="bgmplayer itemstyle">背景音乐</div>
+                        <div class="bgmplayer itemstyle" onclick="location='bgm.html'">背景音乐</div>
                     </div>
                     <div class="items">
-                        <div class="about itemstyle">关于</div>
+                        <div class="about itemstyle" onclick="location='about.html'">关于</div>
                     </div>
                     <div class="items itemsbottom">
                         <div id="loginout" class="itemstyle" onclick="location='index.htm'">退出聊天</div>
@@ -39,6 +40,7 @@
             </div>
         </div>
     </div>
+    <script src="./js/chat.js"></script>
 </body>
 
 </html>
