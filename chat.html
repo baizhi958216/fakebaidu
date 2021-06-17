@@ -40,10 +40,11 @@
             <div class="right">
                 <div class="rRun">
                     <div class="runTop">
+                        <div id="runBox" class="runBox"></div>
                     </div>
                     <div class="runBottom">
-                        <input id="launch" type="text" value="老师给点分。。。。。。" maxlength="30" placeholder="发个友善的弹幕见证当下" onclick="byePlaceholder()">
-                        <button>发送</button>
+                        <input id="txt" type="text" value="老师给点分。。。。。。" maxlength="30" placeholder="发个友善的弹幕见证当下" onkeydown="enterKey()">
+                        <button onclick="send()">发送</button>
                     </div>
                 </div>
             </div>
