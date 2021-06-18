@@ -85,6 +85,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: bolder;
 }
 
 .bx .btn1 {
