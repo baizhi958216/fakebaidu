@@ -28,6 +28,13 @@
     user-select: none;
 }
 
+#back {
+    position: absolute;
+    margin: 10px 350px 0 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .inputBox {
     display: grid;
     justify-content: center;
@@ -92,18 +99,6 @@
 
 .inputBox .enter:active {
     background-color: rgb(43, 188, 255);
-}
-
-.signNow {
-    position: relative;
-    top: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.signNow a {
-    color: rgb(157, 169, 238);
 }
 
 .otherWay {
