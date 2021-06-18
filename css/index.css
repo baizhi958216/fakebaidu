@@ -60,6 +60,29 @@
     align-items: center;
 }
 
+.footer {
+    background-color: rgba(98, 198, 255, 0.404);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.door ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.door ul li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.door ul li a {
+    color: rgb(0, 119, 255);
+}
+
 .cent {
     position: relative;
     height: 550px;
