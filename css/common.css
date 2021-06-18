@@ -4,12 +4,10 @@
 }
 
 body {
-    background-color: rgba(178, 199, 245, 0.534);
+    background-color: rgba(193, 211, 253, 0.534);
 }
 
 canvas {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: fixed;
 }
