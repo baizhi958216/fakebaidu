@@ -1,126 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap');
 .container {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    min-width: 1300px;
 }
 
-.myBox {
-    height: 600px;
-    width: 500px;
-    border-radius: 50px;
-    box-shadow: 13px 13px 30px rgba(163, 163, 163, 0.747);
-    backdrop-filter: blur(6px);
-}
-
-.loginHeader {
-    position: relative;
-    height: 180px;
+.pageYi {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(108, 118, 124); */
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.loginHeader h2 {
-    font-family: 'Noto Sans SC', sans-serif;
-    font-size: 50px;
+.pageYi .cent {
+    position: relative;
+    /* background-color: rgb(177, 174, 174); */
+    height: 550px;
+    width: 100%;
+    display: flex;
+}
+
+.cent .oneLeft {
+    /* background-color: blue; */
+    height: 100%;
+    width: 50%;
+}
+
+.oneLeft .imgasbg {
+    background-image: url(../images/sample.png);
+    width: 600px;
+    height: 308px;
+    position: relative;
+    /* background-color: red; */
+    top: 20%;
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.cent .oneRight {
+    /* background-color: red; */
+    height: 100%;
+    width: 50%;
+}
+
+.oneRight .txt {
+    /* background-color: blue; */
+    position: relative;
+    top: 20%;
+    width: 550px;
+    text-align: center;
+    left: 50px;
     user-select: none;
 }
 
-.inputBox {
-    display: grid;
-    justify-content: center;
+.txt p {
+    font-family: 'Noto Sans SC', sans-serif;
+    line-height: 80px;
+    color: white;
+    font-size: 40px;
 }
 
-.inputBox .inpt {
-    width: 300px;
-    height: 50px;
-    text-align: center;
-    outline: none;
-    margin-bottom: 25px;
-    border: 1px solid rgba(128, 215, 255, 0.747);
-    border-radius: 20px;
-    font-size: large;
-    color: rgb(46, 153, 253);
-    background-color: rgba(255, 255, 255, 0.459);
-}
-
-::-webkit-input-placeholder {
-    color: rgba(153, 153, 153, 0.815);
-}
-
-#showpswd {
-    position: absolute;
-    margin-top: 18px;
-    margin-left: -30px;
-    color: rgb(128, 215, 255);
-    width: 1em;
-    height: 1em;
-    fill: currentColor;
-    overflow: hidden;
-}
-
-.inputBox .enter {
-    margin-bottom: 25px;
-    background-color: rgb(43, 188, 255);
-    outline: none;
-    border: none;
-    cursor: pointer;
-    width: 150px;
-    height: 60px;
-    border-radius: 60px;
+.txt a {
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all .2s linear;
+    top: 50px;
+    color: rgb(65, 128, 199);
 }
 
-.inputBox a {
-    font-weight: bold;
-    font-size: large;
-    color: rgb(255, 255, 255);
+.txt .bx {
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.bx .btn {
     text-decoration: none;
-}
-
-.inputBox .enter:hover {
-    background-color: rgb(128, 215, 255);
-}
-
-.inputBox .enter:active {
-    background-color: rgb(43, 188, 255);
-}
-
-.signNow {
-    position: relative;
-    top: 5px;
+    color: white;
+    /* background-color: rgb(177, 177, 177); */
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    margin-left: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-.signNow a {
-    color: rgb(157, 169, 238);
+.bx .btn1 {
+    background-color: rgb(79, 139, 252);
+    color: rgb(255, 255, 255);
+    transition: all .1s ease-in-out;
 }
 
-.otherWay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+.bx .btn1:hover {
+    background-color: rgb(37, 193, 255);
 }
 
-.otherWay a {
-    height: 2em;
-    width: 2em;
-    margin: 15px;
-    border-radius: 50%;
-    transition: all .3s linear;
+.bx .btn2 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: all .1s ease-in-out;
 }
 
-.otherWay a:hover {
-    box-shadow: 6px 6px 12px rgba(148, 148, 148, 0.747);
+.bx .btn2:hover {
+    background-color: rgb(232, 246, 255);
 }

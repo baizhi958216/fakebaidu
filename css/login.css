@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap');
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myBox {
+    height: 600px;
+    width: 500px;
+    border-radius: 50px;
+    box-shadow: 13px 13px 30px rgba(163, 163, 163, 0.747);
+    backdrop-filter: blur(6px);
+}
+
+.loginHeader {
+    position: relative;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginHeader h2 {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 50px;
+    user-select: none;
+}
+
+.inputBox {
+    display: grid;
+    justify-content: center;
+}
+
+.inputBox .inpt {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 25px;
+    border: 1px solid rgba(128, 215, 255, 0.747);
+    border-radius: 20px;
+    font-size: large;
+    color: rgb(46, 153, 253);
+    background-color: rgba(255, 255, 255, 0.459);
+}
+
+::-webkit-input-placeholder {
+    color: rgba(153, 153, 153, 0.815);
+}
+
+#showpswd {
+    position: absolute;
+    margin-top: 18px;
+    margin-left: -30px;
+    color: rgb(128, 215, 255);
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.inputBox .enter {
+    margin-bottom: 25px;
+    background-color: rgb(43, 188, 255);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+    border-radius: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .2s linear;
+}
+
+.inputBox a {
+    font-weight: bold;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.inputBox .enter:hover {
+    background-color: rgb(128, 215, 255);
+}
+
+.inputBox .enter:active {
+    background-color: rgb(43, 188, 255);
+}
+
+.signNow {
+    position: relative;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signNow a {
+    color: rgb(157, 169, 238);
+}
+
+.otherWay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.otherWay a {
+    height: 2em;
+    width: 2em;
+    margin: 15px;
+    border-radius: 50%;
+    transition: all .3s linear;
+}
+
+.otherWay a:hover {
+    box-shadow: 6px 6px 12px rgba(148, 148, 148, 0.747);
+}
