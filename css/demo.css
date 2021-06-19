@@ -1,0 +1,150 @@
+body {
+    background-repeat: no-repeat;
+    background-image: url(https://uploadstatic.mihoyo.com/contentweb/20210324/2021032415584151925.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 23%;
+    background-color: gray;
+    border-radius: 0px;
+    height: 65px;
+}
+
+#top {
+    white-space: nowrap;
+}
+
+.first-font {
+    margin-left: 20px
+}
+
+.font-set {
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 6px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    opacity: 85%;
+    text-decoration: none
+}
+
+.font-set:hover {
+    opacity: 100%
+}
+
+.littlebox {
+    margin-right: 31px;
+    margin-top: 19px;
+    display: inline-block;
+    position: relative
+}
+
+.more {
+    display: none
+}
+
+
+/* .logo {
+    margin-top: 20px;
+    text-align: center;
+    user-select: none
+} */
+
+.search {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+input {
+    background: white;
+    float: left;
+    border-style: solid;
+    border-color: rgb(0, 119, 255);
+    border-width: 2px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    outline: none;
+    width: 360px;
+    height: 38px;
+    font-size: 20px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    width: 108px;
+    height: 44px;
+    line-height: 45px;
+    line-height: 44px\9;
+    padding: 0;
+    background: 0 0;
+    background-color: #4e6ef2;
+    border-radius: 0 10px 10px 0;
+    font-size: 17px;
+    color: #fff;
+    box-shadow: none;
+    font-weight: 400;
+    border: none;
+    outline: 0;
+    user-select: none
+}
+
+button:hover {
+    background: #4662d9;
+}
+
+.font-set1 {
+    font-size: 13px;
+    opacity: 85%;
+    display: inline;
+    margin-right: 18px;
+}
+
+#centerbox {
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    width: 45%;
+    background-color: white;
+    height: 480px;
+}
+
+.underboxtext {
+    opacity: 60%;
+    color: gray;
+    text-decoration: none
+}
+
+.underboxtext:hover {
+    opacity: 100%;
+    color: black;
+}
+
+.underbox {
+    white-space: nowrap;
+    width: 100%;
+    position: fixed;
+    z-index: 302;
+    bottom: 0;
+    left: 0;
+    height: 39px;
+    padding-top: 1px;
+    overflow: hidden;
+    zoom: 1;
+    margin: 0;
+    line-height: 39px;
+    background: #fff;
+}
+
+.last {
+    opacity: 60%;
+    color: gray;
+    cursor: default
+}
