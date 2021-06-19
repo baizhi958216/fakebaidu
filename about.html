@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <script src="./js/jquery.min.js"></script>
+    <link rel="shortcut icon" href="./images/mycat.png" type="image/x-icon">
+</head>
+
+<body>
+    <canvas id="cas"></canvas>
+    <div class="container">
+        <div class="box">
+            <div class="left">
+                <div class="itemgroup">
+                    <div class="items itemshead">
+                        <div class="hdimg">
+                            <img src="./images/mycat.png" width="104" height="82" alt="" title="Hi~">
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="running itemstyle" onclick="location='chat.html'">弹幕聊天</div>
+                    </div>
+                    <div class="items">
+                        <div class="bgmplayer itemstyle" onclick="location='bgm.html'">听歌</div>
+                    </div>
+                    <div class="items">
+                        <div class="about itemstyle" onclick="location='about.html'">关于</div>
+                    </div>
+                    <div class="items itemsbottom">
+                        <div id="loginout" class="itemstyle" onclick="location='index.htm'">退出聊天</div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightAbout">
+                <div class="fontsAbout">
+                    <h1>
+                        关于这个网站
+                    </h1>
+
+                    <p class="ct">是我大一的期末作品，在2021-06-14 11:35开始制作并且进行第一次提交。作品已经开源到gitee并且支持pull request申请。作品地址：<a href="https://gitee.com/baizhi958216/simple-login" target="_blank">https://gitee.com/baizhi958216/simple-login.git</a>。如果需要获取源码可在gitee下载或者使用git同步到本地。</p>
+                    <p class="ct">"弹幕空间"支持本地发送弹幕，"弹幕空间"构建的意义在于用户上下班发生的小事大事的分享，讨论，交流，为用户提供一个在线即时匿名弹幕聊天的空间。</p>
+                    <p class="ct">不仅如此，"弹幕空间"还支持在线听歌，看MV，功能正在完善中，希望让用户能够通过这种以匿名的方式宣泄自己的情绪，无论是开心、焦虑、愤怒... ，都希望用户在"弹幕空间"里尽情分享</p>
+                    <p class="cb">2021年06月18日 晚21点17分</p>
+                    <p class="cb">弹幕空间</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/canvas.js"></script>
+</body>
+
+</html>
