@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap');
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myBox {
+    height: 600px;
+    width: 500px;
+    border-radius: 50px;
+    box-shadow: 13px 13px 30px rgba(163, 163, 163, 0.747);
+    backdrop-filter: blur(6px);
+}
+
+.joinHeader {
+    position: relative;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.joinHeader h2 {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 50px;
+    user-select: none;
+    color: rgba(46, 153, 253, 0.726);
+}
+
+#back {
+    position: absolute;
+    margin: 10px 350px 0 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#scs {
+    display: none;
+}
+
+#go {
+    display: none;
+    background-color: rgba(7, 187, 61, 0.795);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 60px;
+    transition: all .2s linear;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+#go:hover {
+    background-color: rgba(128, 215, 255, 0.747);
+    transition: all .2s linear;
+}
+
+.formgroup {
+    text-align: center;
+    /* display: none; */
+}
+
+.formgroup-2,
+.formgroup-3 {
+    margin-top: 20px;
+}
+
+label {
+    color: rgba(46, 160, 253, 0.801);
+}
+
+.formgroup-1 dd input,
+.formgroup-2 dd input,
+.formgroup-3 dd input {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    outline: none;
+    border: 1px solid rgba(128, 215, 255, 0.747);
+    border-radius: 20px;
+    font-size: large;
+    color: rgb(46, 153, 253);
+    background-color: rgba(255, 255, 255, 0.459);
+}
+
+#showpswd {
+    position: absolute;
+    margin-top: 18px;
+    margin-left: -30px;
+    color: rgb(128, 215, 255);
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(153, 153, 153, 0.815);
+}
+
+.enter {
+    margin-top: 50px;
+    background-color: rgb(43, 188, 255);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+    border-radius: 60px;
+    transition: all .2s linear;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+
+.enter:hover {
+    background-color: rgb(128, 215, 255);
+}
+
+.enter:active {
+    background-color: rgb(43, 188, 255);
+}
