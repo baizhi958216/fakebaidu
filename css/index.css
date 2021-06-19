@@ -3,7 +3,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    min-width: 1000px;
+    min-width: 1200px;
 }
 
 .pageYi {
@@ -117,6 +117,27 @@
     left: 100%;
     transform: translateX(-100%);
     opacity: 90%;
+}
+
+.oneLeft {
+    display: flex;
+    align-items: center;
+}
+
+.oneLeft img {
+    margin-left: 100%;
+    transform: translateX(-100%);
+}
+
+.oneLeft img.samp {
+    width: 70%;
+    height: 70%;
+    transition: all .3s linear;
+}
+
+.oneLeft img.samp:hover {
+    width: 80%;
+    height: 80%;
 }
 
 .oneRight .txt {
