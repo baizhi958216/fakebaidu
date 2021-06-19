@@ -64,9 +64,10 @@
     background-color: rgba(98, 198, 255, 0.404);
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 70px;
 }
 
 .door ul {
@@ -81,6 +82,12 @@
 
 .door ul li a {
     color: rgb(0, 119, 255);
+}
+
+.footer p {
+    color: rgba(109, 150, 187, 0.719);
+    position: relative;
+    top: 5px;
 }
 
 .cent {
@@ -101,13 +108,15 @@
 }
 
 .oneLeft .imgasbg {
-    background-image: url(../images/sample.png);
+    background-image: url(../images/3.png);
+    background-size: 100%;
     width: 600px;
-    height: 308px;
+    height: 345px;
     position: relative;
     top: 20%;
     left: 100%;
     transform: translateX(-100%);
+    opacity: 90%;
 }
 
 .oneRight .txt {
