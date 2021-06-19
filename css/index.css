@@ -132,12 +132,8 @@
 .oneLeft img.samp {
     width: 70%;
     height: 70%;
-    transition: all .3s linear;
-}
-
-.oneLeft img.samp:hover {
-    width: 80%;
-    height: 80%;
+    border-radius:10px;
+    border:3px solid rgba(37, 153, 215,0.5);
 }
 
 .oneRight .txt {
