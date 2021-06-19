@@ -43,6 +43,13 @@
                     </div>
                     <div class="runBottom">
                         <input id="txt" type="text" value="老师给点分。。。。。。" maxlength="30" placeholder="发个友善的弹幕见证当下" onkeydown="enterKey()">
+                        <table>
+                            <tr>
+                                <td id="hour">:</td>
+                                <td id="minute">:</td>
+                                <td id="second">:</td>
+                            </tr>
+                        </table>
                         <button onclick="send()">发送</button>
                     </div>
                 </div>
@@ -51,6 +58,31 @@
     </div>
     <script src="./js/canvas.js"></script>
     <script src="./js/danmu.js"></script>
+    <script>
+        function addZero(zero) {
+            if (zero < 10) {
+                return ("0" + zero);
+            } else {
+                return (zero);
+            }
+        }
+
+        function displayTime() {
+            var oHour = document.getElementById("hour");
+            var oMinute = document.getElementById("minute");
+            var oSecond = document.getElementById("second");
+
+            var nowTime = new Date();
+            var nowHour = nowTime.getHours();
+            var nowMinute = nowTime.getMinutes();
+            var nowSecond = nowTime.getSeconds();
+            // console.log(addZero(nowHour) + ":" + addZero(nowMinute) + ":" + addZero(nowSecond));
+            oHour.innerHTML = addZero(nowHour) + ":";
+            oMinute.innerHTML = addZero(nowMinute) + ":";
+            oSecond.innerHTML = addZero(nowSecond);
+        }
+        window.setInterval("displayTime()", 1000);
+    </script>
 </body>
 
 </html>

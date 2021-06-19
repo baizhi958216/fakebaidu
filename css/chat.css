@@ -223,3 +223,25 @@ p.ct a:hover {
     font-size: 20px;
     font-family: 'Noto Sans SC', sans-serif;
 }
+
+table {
+    position: absolute;
+    /* background-color: #CCC; */
+    height: 100px;
+    /* width: 300px; */
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+tr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 80px;
+    text-shadow: 1px 1px 3px rgba(32, 129, 255, 0.541);
+}
