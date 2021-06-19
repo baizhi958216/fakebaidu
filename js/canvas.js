@@ -95,3 +95,6 @@ function animate() {
     });
     RAF(animate);
 }
+window.onresize = function() {
+    location.reload();
+}
