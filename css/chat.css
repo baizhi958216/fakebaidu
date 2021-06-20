@@ -245,3 +245,58 @@ td {
     font-size: 80px;
     text-shadow: 1px 1px 3px rgba(32, 129, 255, 0.541);
 }
+
+.big {
+    /* background-color: red; */
+    background-color: rgba(90, 97, 139, 0.432);
+    border-radius: 40px;
+    position: relative;
+    width: 800;
+    height: 600;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tp img {
+    border-radius: 40px;
+    height: 180px;
+    width: 180px;
+    padding: 17px;
+}
+
+.button1 {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: 0;
+    height: 15px;
+    width: 15px;
+    background: url("../images/play.png") no-repeat;
+    transition: all 0.3s linear;
+}
+
+.button1:hover {
+    opacity: 70%;
+    background: url("../images/play_hover.png") no-repeat;
+}
+
+.button2 {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: 0;
+    height: 15px;
+    width: 15px;
+    background: url("../images/pause.png") no-repeat;
+    transition: all 0.3s linear;
+}
+
+.button2:hover {
+    opacity: 70%;
+    background: url("../images/pause_hover.png") no-repeat;
+}
+
+.big p {
+    padding-left: 30px;
+}

@@ -94,7 +94,5 @@ function animate() {
         ndots.splice(ndots.indexOf(dot), 1);
     });
     RAF(animate);
-}
-window.onresize = function() {
-    location.reload();
+
 }
