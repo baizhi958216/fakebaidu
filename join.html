@@ -13,11 +13,19 @@
 </head>
 
 <body>
+
     <canvas id="cas"></canvas>
+
+    <div id="ckbox">
+        <p id="ask"></p>
+        <button class="yes" onclick="ckOk()">好的</button>
+    </div>
+    <div id="shadow"></div>
+
     <div class="container">
         <div class="myBox" data-tilt data-tilt-max="5" data-tilt-speed="800">
             <div class="joinHeader">
-                <div id="back" onclick="location='index.html'"><svg class="icon" style="color:rgba(15, 155, 255, 0.747); width: 3em;height: 3em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2071"><path d="M512 128c211.74 0 384 172.26 384 384S723.74 896 512 896 128 723.74 128 512s172.27-384 384-384m0-64C264.58 64 64 264.58 64 512s200.58 448 448 448 448-200.58 448-448S759.42 64 512 64zM704 480H397.26L501 376.23A32 32 0 0 0 455.77 331L297.38 489.37s-0.05 0.09-0.09 0.13A32.26 32.26 0 0 0 288 512a32.38 32.38 0 0 0 9.37 22.58L455.77 693A32 32 0 1 0 501 647.76L397.26 544H704a32 32 0 0 0 0-64z" p-id="2072"></path></svg></div>
+                <div id="back" onclick="location='index.htm'"><svg class="icon" style="color:rgba(15, 155, 255, 0.747); width: 3em;height: 3em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2071"><path d="M512 128c211.74 0 384 172.26 384 384S723.74 896 512 896 128 723.74 128 512s172.27-384 384-384m0-64C264.58 64 64 264.58 64 512s200.58 448 448 448 448-200.58 448-448S759.42 64 512 64zM704 480H397.26L501 376.23A32 32 0 0 0 455.77 331L297.38 489.37s-0.05 0.09-0.09 0.13A32.26 32.26 0 0 0 288 512a32.38 32.38 0 0 0 9.37 22.58L455.77 693A32 32 0 1 0 501 647.76L397.26 544H704a32 32 0 0 0 0-64z" p-id="2072"></path></svg></div>
                 <h2 id="done">注册</h2>
             </div>
             <div id="scs">
@@ -71,21 +79,42 @@
             });
         });
 
+        function ckOk() {
+            var ckbox = document.getElementById("ckbox");
+            var shadow = document.getElementById("shadow");
+            ckbox.style.display = "none";
+            shadow.style.display = "none";
+        }
+
         function joinOk() {
             var userId = document.getElementById('user_login');
             var mailId = document.getElementById('user_email');
             var paswId = document.getElementById('pass');
+            var ckbox = document.getElementById("ckbox");
+            var shadow = document.getElementById("shadow");
+            var ask = document.getElementById("ask");
             if (userId.value === "") {
-                alert("用户名为空，请重新输入");
+                ckbox.style.display = "block";
+                shadow.style.display = "block";
+                ask.innerText = "空用户名，请重新输入";
+                // alert("用户名为空，请重新输入");
                 return 0;
             } else if (mailId.value === "") {
-                alert("邮箱为空，请重新输入");
+                ckbox.style.display = "block";
+                shadow.style.display = "block";
+                // alert("邮箱为空，请重新输入");
+                ask.innerText = "空邮箱，请重新输入";
                 return 0;
             } else if (paswId.value === "") {
-                alert("密码为空，请重新输入");
+                ckbox.style.display = "block";
+                shadow.style.display = "block";
+                // alert("密码为空，请重新输入");
+                ask.innerText = "空密码，请重新输入";
                 return 0;
             } else {
-                alert("注册成功！您的账号为:" + userId.value);
+                ckbox.style.display = "block";
+                // alert("注册成功！您的账号为:" + userId.value);
+                ask.innerText = "注册成功！您的账号为:" + userId.value;
                 var arr = new Array("scs", "go");
                 for (var i = 0; i < arr.length; i++) {
                     document.getElementById(arr[i]).style.display = "block";
