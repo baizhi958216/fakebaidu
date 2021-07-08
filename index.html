@@ -83,8 +83,18 @@
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <script>
         function clk() {
-            var get = document.getElementById("srk");
-            if (get.value != "4399") {
+            var get = document.getElementById("srk").value;
+            if (get == "迷你世界") {
+                $("#form").click(function() {
+                    url = 'https://www.bilibili.com/video/BV1GJ411x7h7';
+                    $("#form").attr("action", url)
+                })
+            } else if (get == "4399" || get == "3366" || get == "游戏" || get == "7k7k" || get == "7K7K") {
+                $("#form").click(function() {
+                    url = '#';
+                    $("#form").attr("action", url)
+                })
+            } else {
                 $("#form").click(function() {
                     url = 'https://baidu.com/s';
                     $("#form").attr("action", url)
