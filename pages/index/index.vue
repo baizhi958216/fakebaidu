@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/webwxgetmsgimg.jpg"></image>
+		<image class="logo" src="https://gitee.com/baizhi958216/fakebaidu/raw/airo/static/webwxgetmsgimg.jpg"></image>
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
