@@ -56,7 +56,6 @@
 	.pwoff{
 		position: absolute;
 		margin-top: 1000rpx;
-		margin-left: 300rpx;
 	}
 	.pwoff:active{
 		background-color: rgba(32, 144, 248, 0.6);
