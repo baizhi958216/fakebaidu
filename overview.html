@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program overview</title>
     <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/overview.css">
+    <script src="/javascript/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div id="overview">
@@ -14,8 +16,27 @@
                 <a href="/index.html"><-|Back</a>
                 <div id="r">Side<span style="color: red;">!</span>oader :)</div>
             </div>
+
+            <div id="status">
+               <span>网站已经正常运行：</span><span id="liveTime"></span>
+            </div>
+
+            <section id="sction">
+                <header id="heder">
+                    <span>Website</span><span>Operational</span>
+                </header>
+                <div class="commsctions"><span style="cursor: pointer;">index</span><span>√</span></div>
+                <div class="commsctions"><span style="cursor: pointer;">blog</span><span>√</span></div>
+                <div class="commsctions"><span style="cursor: pointer;">overview</span><span>√</span></div>
+                <div class="commsctions"><span style="cursor: pointer;">find_devices</span><span>√</span></div>
+                <div class="commsctions"><span style="cursor: pointer;">assistance</span><span>√</span></div>
+                <div class="commsctions"><span style="cursor: pointer;">feedback</span><span>√</span></div>
+            </section>
+
             <div id="vieww"></div>
         </div>
     </div>
+    <script src="/javascript/echarts.js"></script>
+    <script src="/javascript/overview.js"></script>
 </body>
 </html>

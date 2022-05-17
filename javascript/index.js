@@ -83,10 +83,15 @@ const swiper = new Swiper(".mySwiper", {
   },
 })
 
-// 监听窗口resize操作
+// 监听窗口resize,scroll,load操作，动态配置页面大小 记录浏览位置
 $(window).on('resize',()=>{
   getWindowSize()
+}).on('scroll',()=>{
+  localStorage.setItem('offsetTop',$(window).scrollTop())
+}).on('load',()=>{
+  $(document).scrollTop(localStorage.getItem('offsetTop'))
 })
+
 function getWindowSize() {
   myMain.css({
     'width': $(window).width() + 'px',

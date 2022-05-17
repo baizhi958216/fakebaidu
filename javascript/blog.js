@@ -14,8 +14,21 @@ mdWriter.css({
   justifyContent: 'center'
 })
 
-// 获取日志
-fetch('/assets/blogs/Side!oadBlog.md').then(response => response.blob()).then(blob => blob.text()).then(markdown => { mdWriter[0].innerHTML = marked.parse(markdown); })
+// 获取更新日志
+let histroyList = [
+  'v0.0.1preview',
+  'v0.0.2preview',
+  'v0.0.3preview',
+  'v0.0.4preview',
+  'side!oadBlog'
+]
+
+for (fileList = histroyList.length-1; fileList >=0 ; fileList--) {
+  fetch(`/assets/blogs/${histroyList[fileList]}.md`)
+    .then(response => response.blob())
+    .then(blob => blob.text())
+    .then(markdown => { mdWriter[0].innerHTML += marked.parse(markdown) })
+}
 
 // 监听窗口resize操作
 $(window).on('resize', () => {
