@@ -24,7 +24,7 @@ let histroyList = [
 ]
 
 for (fileList = histroyList.length-1; fileList >=0 ; fileList--) {
-  fetch(`/assets/blogs/${histroyList[fileList]}.md`,{
+  fetch(`https://gitee.com/baizhi958216/fakebaidu/raw/side!oad/assets/blogs/${histroyList[fileList]}.md`,{
     method: 'get',
     cache:'no-cache',
     responseType: 'blob'
