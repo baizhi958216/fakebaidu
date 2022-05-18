@@ -40,10 +40,12 @@ let deviceArr;
 fetch('/assets/overview/official.json')
 .then(res=>res.json())
 .then(json=>{
-    console.log(json);
+    for (const key in json) {
+        $('.deviceL')[0].innerHTML+=`
+        <div class="commsctions"><span style="cursor: pointer;">${json[key].info[0].codeName}</span><span>${json[key].info[0].status}</span></div>
+        `
+    }
 })
-
-// console.log(deviceArr);
 
 let myChart = echarts.init(document.getElementById('main'));
 // 配置数据

@@ -15,7 +15,7 @@
             {
                 "deviceName":"K40",
                 "codeName":"alioth",
-                "status":"Success"
+                "status":"Uploading..."
             },
             {
                 "deviceName":"K40 Pro",
@@ -60,7 +60,7 @@
             {
                 "deviceName":"Le Pro3",
                 "codeName":"zl1",
-                "status":"Building"
+                "status":"Building..."
             }
         ]
     }
