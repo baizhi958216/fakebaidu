@@ -1,8 +1,5 @@
 const vieww = $('#vieww')
 
-$(getWindowSize())
-
-
 vieww.append(`
 <div id="main" style="width:1000px;height:400px;margin:0 auto;top:60px"></div>
 `)
@@ -82,15 +79,3 @@ let option = {
 
 // 实现图表。
 myChart.setOption(option)
-
-// 监听窗口resize操作
-$(window).on('resize', () => {
-    getWindowSize()
-    myChart.resize()
-})
-function getWindowSize() {
-    vieww.css({
-        'width': $(window).width() + 'px',
-        'height': $(window).height() + 'px'
-    })
-}
