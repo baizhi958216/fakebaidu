@@ -12,7 +12,7 @@
 }
 #sction{
     width: 55%;
-    margin: 0 auto;
+    margin: 20px auto 20px auto;
 }
 #heder{
     position: relative;
@@ -40,9 +40,7 @@
     color: rgb(73, 156, 139);
 }
 .commsctions span:nth-child(2){
-    color: rgb(73, 156, 139);
-    position: relative;
-    left: -45px;
+    color: rgb(73, 156, 139)
 }
 #heder span:nth-child(2){
     color: rgb(73, 156, 139);

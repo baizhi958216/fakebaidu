@@ -8,7 +8,7 @@ vieww.append(`
 `)
 
 // 网站部署日期
-const webSetup='01 May 2022 10:00:00 UTC +8'
+const webSetup = '01 May 2022 10:00:00 UTC +8'
 function upperTime(time) {
     var nowTime = +new Date();
     var inputTime = +new Date(time);
@@ -26,16 +26,26 @@ function upperTime(time) {
     return d + '天' + h + '时' + m + '分' + s + '秒';
 }
 setInterval(() => {
-    $('#liveTime')[0].innerHTML=`${upperTime('01 May 2022 10:00:00 UTC +8')}`
+    $('#liveTime')[0].innerHTML = `${upperTime('01 May 2022 10:00:00 UTC +8')}`
 }, 100)
 
+// 网站状态
+$('span#whtml').on('click', (e) => {
+    window.location.href = `/${e.target.innerHTML}.html`;
+})
+$('span#webStatus').append('√')
 
-$('.commsctions').on('click',()=>{
-    window.location.href = '/index.html';
+// 设备状态
+let deviceArr;
+fetch('/assets/overview/official.json')
+.then(res=>res.json())
+.then(json=>{
+    console.log(json);
 })
 
-let myChart = echarts.init(document.getElementById('main'));
+// console.log(deviceArr);
 
+let myChart = echarts.init(document.getElementById('main'));
 // 配置数据
 let option = {
     title: {
@@ -50,8 +60,8 @@ let option = {
         axisLine: {
             symbol: ['none', 'arrow'],
         },
-        axisTick:{
-            show:false
+        axisTick: {
+            show: false
         }
     },
     yAxis: {
@@ -60,11 +70,11 @@ let option = {
         {
             type: 'line',
             data: [200, 212, 260, 240, 200],
-            label:{
+            label: {
                 show: true,
             }
         },
-        
+
     ]
 }
 

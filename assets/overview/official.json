@@ -1,0 +1,67 @@
+[
+    {
+        "manufacturer":"meizu" ,
+        "info":[
+            {
+                "deviceName":"18",
+                "codeName":"m2181",
+                "status":"Success"
+            }
+        ]
+    },
+    {
+        "manufacturer":"xiaomi" ,
+        "info":[
+            {
+                "deviceName":"K40",
+                "codeName":"alioth",
+                "status":"Success"
+            },
+            {
+                "deviceName":"K40 Pro",
+                "codeName":"haydn",
+                "status":"Success"
+            }
+        ]
+    },
+    {
+        "manufacturer":"realme" ,
+        "info":[
+            {
+                "deviceName":"Realme XT",
+                "codeName":"RMX1921",
+                "status":"Success"
+            }
+        ]
+    },
+    {
+        "manufacturer":"motorola" ,
+        "info":[
+            {
+                "deviceName":"Edge S",
+                "codeName":"nio",
+                "status":"Success"
+            }
+        ]
+    },
+    {
+        "manufacturer":"asus" ,
+        "info":[
+            {
+                "deviceName":" Zenfone 8 Mini",
+                "codeName":"sake",
+                "status":"Success"
+            }
+        ]
+    },
+    {
+        "manufacturer":"leeco" ,
+        "info":[
+            {
+                "deviceName":"Le Pro3",
+                "codeName":"zl1",
+                "status":"Building"
+            }
+        ]
+    }
+]
