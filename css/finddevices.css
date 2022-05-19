@@ -6,11 +6,10 @@
     background-color: rgb(73, 156, 139);
 }
 #devis{
-    /* background-color: rgb(95, 95, 24); */
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     min-height: 200px;
+    padding: 0 10% 0 10%;
 }
 .dlist{
     height: 60%;
@@ -19,17 +18,60 @@
     flex-wrap: wrap;
     align-items: center;
 }
-.dlist div{
-    display: block;
-    background-color: rgb(166, 166, 166);
-    min-width: 300px;
-    min-height: 300px;
-    margin: 25px;
-    color: #000;
-}
 .detail{
     display: none;
     background-color: rgb(183, 183, 183);
     height: 40%;
     width: 100%;
+}
+
+#device_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 300px;
+    min-height: 400px;
+    margin: 25px;
+    color: #000;
+    box-shadow: 0px 1px 5px rgb(146, 146, 146);
+    user-select: none;
+    cursor: pointer;
+}
+#devicepic{
+    width: 150px;
+    height: 170px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: 180%;
+    background-repeat: no-repeat;
+}
+#device_card div:nth-child(2),#device_card div:nth-child(3),#device_card div:nth-child(4){
+    padding-left: 30px;
+}
+#device_card div:nth-child(2){
+    font-size: 20px;
+    font-weight: 600;
+}
+#device_card div:nth-child(3){
+    color: rgba(89, 89, 89, 0.823);
+}
+#device_card div:nth-child(4) span{
+    background-color: rgba(89, 89, 89, 0.23);
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0 10px 0 10px;
+}
+#dlLatest{
+    height: 50px;
+    background-color: rgb(73, 156, 139);
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
 }
