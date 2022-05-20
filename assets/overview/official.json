@@ -3,19 +3,30 @@
         "manufacturer":"meizu" ,
         "info":[
             {
-                "deviceName":"16",
+                "deviceName":"16th",
                 "codeName":"m1882",
-                "status":"Success"
+                "status":"Success",
+                "supportROMs":[
+                    "LineageOS",
+                    "crDroid",
+                    "DerpFest"
+                ]
             },
             {
                 "deviceName":"16s",
                 "codeName":"m1971",
-                "status":"Success"
+                "status":"Success",
+                "supportROMs":[
+                    "DerpFest"
+                ]
             },
             {
                 "deviceName":"18",
                 "codeName":"m2181",
-                "status":"Success"
+                "status":"Success",
+                "supportROMs":[
+                    "LineageOS"
+                ]
             }
         ]
     },
@@ -30,7 +41,12 @@
             {
                 "deviceName":"K40 Pro",
                 "codeName":"haydn",
-                "status":"Success"
+                "status":"Success",
+                "supportROMs":[
+                    "LineageOS",
+                    "PixelExperience",
+                    "AICP"
+                ]
             }
         ]
     },

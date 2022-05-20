@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/feedback.css">
 </head>
+
 <body>
     <div id="feedback">
         <div id="container">
             <div id="banner">
-                <a href="./index.html"><-|Home</a>
-                <div id="r">Side<span style="color: red;">!</span>oader :)</div>
+                <a href="./index.html"><-|Home</a><div id="r">Side<span style="color: red;">!</span>oader :)</div>
             </div>
-            <div id="feedd"></div>
+            <div id="feedd">
+                <header>Feedback</header>
+                <div class="tip">
+                    <p>We value your feedback</p>
+                    <p>Please complete the following form and help</p>
+                    <p>us improve our customer experience</p>
+                </div>
+                <form>
+                    Who are you?
+                    <input type="radio" name="guys" id="freshman" checked> <label for="freshman">freshman</label> 
+                    <input type="radio" name="guys" id="geek"><label for="geek">geek</label> 
+                </form> 
+                <form action="#">
+                    Which device you are using?<br/>
+                    <input class="inf" type="text" name="device">
+                    <br/>
+                    Which ROM you are using?<br/>
+                    <input class="inf" type="text" name="rom">
+                    <br/>
+                    Your Email:<br/>
+                    <input class="inf" type="text" name="rom">
+                    <br/>
+                    Anything else?<br/>
+                    <textarea name="feb" id="txafeb" cols="60" rows="10"></textarea>
+                    <br/><br/>
+                </form> 
+                <button class="subm">Submit</button>
+            </div>
         </div>
     </div>
 </body>
+
 </html>

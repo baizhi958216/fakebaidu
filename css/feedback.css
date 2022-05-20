@@ -1,0 +1,45 @@
+#feedd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 50px;
+}
+.tip{
+    background-color: antiquewhite;
+    line-height: 2;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.tip p:nth-child(1){
+    font-size: 20px;
+    font-weight:600;
+}
+.tip p:nth-child(2),.tip p:nth-child(3){
+    color: rgb(78, 78, 78);
+}
+form{
+    line-height: 4;
+}
+.inf{
+    background-color: rgba(231, 231, 231, 0.623);
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+}
+textarea{
+    background-color: rgba(231, 231, 231, 0.623);
+}
+.subm{
+    width: 120px;
+    height: 50px;
+    margin-bottom: 30px;
+}
